@@ -216,6 +216,12 @@ function App() {
                 EN
               </button>
               <button
+                onClick={() => setCurrentLang('es')}
+                className={`px-2 py-1 rounded text-sm ${currentLang === 'es' ? 'bg-blue-600 text-white' : 'text-gray-600 hover:bg-gray-100'}`}
+              >
+                ES
+              </button>
+              <button
                 onClick={() => setCurrentLang('hu')}
                 className={`px-2 py-1 rounded text-sm ${currentLang === 'hu' ? 'bg-blue-600 text-white' : 'text-gray-600 hover:bg-gray-100'}`}
               >
