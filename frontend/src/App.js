@@ -6,14 +6,7 @@ function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentLang, setCurrentLang] = useState('en');
   const [showBackToTop, setShowBackToTop] = useState(false);
-  const [bookingForm, setBookingForm] = useState({
-    checkIn: '',
-    checkOut: '',
-    guests: 2,
-    name: '',
-    email: '',
-    phone: ''
-  });
+
 
   // Image URLs provided by user
   const heroImageUrl = "https://cf.bstatic.com/xdata/images/hotel/max1024x768/694268187.jpg?k=5c461c7870663482abaad22a25d739414c6d624163c6762904449f3aa2d65efc&o=";
