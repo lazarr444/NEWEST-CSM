@@ -529,10 +529,11 @@ function App() {
           </p>
           <div className="flex justify-center">
             <a
-              href="https://www.booking.com/hotel/es/casa-blu-marbella.hu.html?label=casa-blu-marbella-e09Ksy2pk*XUpMavCBgYiAS705846823878%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-2322683958403%3Alp9106124%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YavywThF4buZMwppv9IhQn0&sid=4912048e618222e4d1f9defd084dc471&gclid=CjwKCAjw3_PCBhA2EiwAkH_j4pNwkfYNSn_pVPu4UyEpFRD-vbPKlMmw3g2qPpFBcAl4aKYHHL5CXRoCcnQQAvD_BwE&aid=319854&ucfs=1&arphpl=1&dest_id=-391076&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=5ac12c7db95904bc&srepoch=1751005188&from=searchresults"
+              href="https://www.booking.com/hotel/es/casa-blu-marbella.html"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white text-blue-600 px-12 py-6 rounded-lg font-bold text-xl hover:bg-gray-100 hover:transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
+              className="bg-white text-blue-600 px-12 py-6 rounded-lg font-bold text-xl hover:bg-gray-100 hover:transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300 cursor-pointer"
+              onClick={() => window.open('https://www.booking.com/hotel/es/casa-blu-marbella.html', '_blank')}
             >
               BOOK NOW
             </a>
