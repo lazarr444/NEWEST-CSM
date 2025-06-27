@@ -101,6 +101,83 @@ function App() {
         contact: "Contact: +34 643 49 51 18"
       }
     },
+    es: {
+      nav: {
+        about: "Acerca de",
+        amenities: "Servicios",
+        gallery: "Galería",
+        location: "Ubicación"
+      },
+      hero: {
+        title: "Bienvenido a Casa Blu",
+        subtitle: "Casa de vacaciones de lujo en el corazón de Marbella con piscina privada y vistas al mar"
+      },
+      about: {
+        title: "Acerca de Casa Blu",
+        description: "Casa Blu Marbella es una casa de vacaciones recientemente renovada en Marbella, donde los huéspedes pueden aprovechar al máximo su piscina exterior, WiFi gratuito, instalaciones de deportes acuáticos y jardín. Esta casa de vacaciones ofrece alojamiento con aire acondicionado y balcón. La propiedad ofrece instalaciones de barbacoa y aparcamiento en el lugar.",
+        features: "Características Principales",
+        featureList: [
+          "Entrada privada y ambiente libre de alérgenos",
+          "4 dormitorios, 4 baños con duchas a ras de suelo",
+          "Cocina totalmente equipada con lavavajillas y horno",
+          "Terraza con impresionantes vistas al mar",
+          "Vino, champán, chocolates y galletas de cortesía",
+          "Alojamiento con aire acondicionado",
+          "TV de pantalla plana y WiFi gratuito",
+          "Instalaciones de barbacoa y aparcamiento en el lugar"
+        ]
+      },
+      amenities: {
+        title: "Servicios e Instalaciones",
+        outdoor: {
+          title: "Instalaciones Exteriores",
+          items: ["Piscina Privada", "Hermoso Jardín", "Área de Barbacoa", "Terraza con Vistas al Mar", "Aparcamiento en el Lugar"]
+        },
+        comfort: {
+          title: "Comodidad y Conveniencia",
+          items: ["Aire Acondicionado", "WiFi Rápido (104 Mbps)", "TV de Pantalla Plana", "Cocina Totalmente Equipada", "Entrada Privada"]
+        },
+        activities: {
+          title: "Actividades y Entretenimiento",
+          items: ["Instalaciones de Deportes Acuáticos", "Windsurf", "Pesca", "Golf Cercano", "Área de Bar/Salón"]
+        }
+      },
+      gallery: {
+        title: "Galería de Fotos",
+        subtitle: "Explora los hermosos espacios de Casa Blu"
+      },
+      location: {
+        title: "Ubicación Privilegiada",
+        description: "Casa Blu está perfectamente ubicada en Marbella, ofreciendo fácil acceso a playas, campos de golf y atracciones locales.",
+        distances: {
+          title: "Atracciones Cercanas",
+          items: [
+            { name: "Playa de Artola", distance: "1,1 km" },
+            { name: "La Cala Golf", distance: "9 km" },
+            { name: "Miraflores Resort", distance: "5 km" },
+            { name: "Plaza de los Naranjos", distance: "12 km" },
+            { name: "Aeropuerto de Málaga", distance: "42 km" }
+          ]
+        },
+        restaurants: {
+          title: "Restaurantes Cercanos",
+          items: [
+            { name: "Restaurante Ra-Ma", distance: "850 m" },
+            { name: "Restaurante Döss", distance: "800 m" },
+            { name: "Jaipur Palace", distance: "900 m" }
+          ]
+        }
+      },
+      cta: {
+        title: "¿Listo para experimentar Casa Blu?",
+        subtitle: "Reserva tu escapada de lujo hoy"
+      },
+      footer: {
+        copyright: "© 2025 Casa Blu Marbella. Todos los derechos reservados.",
+        designed: "Diseñado con amor para estancias inolvidables.",
+        contact: "Contacto: +34 643 49 51 18"
+      }
+    },
     hu: {
       nav: {
         about: "Rólunk",
