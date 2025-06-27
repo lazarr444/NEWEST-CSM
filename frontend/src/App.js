@@ -360,7 +360,7 @@ function App() {
               </p>
               <div className="space-y-4">
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  The spacious holiday home with a terrace and sea views features 4 bedrooms, a living room, a flat-screen TV, an equipped kitchen with a dishwasher and an oven, and 4 bathrooms with a walk-in shower. A private entrance leads guests into the holiday home, where they can enjoy some wine or champagne and chocolates or cookies.
+                  {currentContent.about.detailedDescription}
                 </p>
               </div>
             </div>
