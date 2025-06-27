@@ -38,6 +38,7 @@ function App() {
       about: {
         title: "About Casa Blu",
         description: "Casa Blu Marbella is a recently renovated holiday home in Marbella, where guests can make the most of its outdoor swimming pool, free WiFi, water sports facilities and garden. This holiday home offers air-conditioned accommodation with a balcony. The property provides barbecue facilities and parking on-site.",
+        detailedDescription: "The spacious holiday home with a terrace and sea views features 4 bedrooms, a living room, a flat-screen TV, an equipped kitchen with a dishwasher and an oven, and 4 bathrooms with a walk-in shower. A private entrance leads guests into the holiday home, where they can enjoy some wine or champagne and chocolates or cookies.",
         features: "Key Features",
         featureList: [
           "Private entrance & allergy-free environment",
