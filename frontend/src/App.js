@@ -116,6 +116,7 @@ function App() {
       about: {
         title: "Acerca de Casa Blu",
         description: "Casa Blu Marbella es una casa de vacaciones recientemente renovada en Marbella, donde los huéspedes pueden aprovechar al máximo su piscina exterior, WiFi gratuito, instalaciones de deportes acuáticos y jardín. Esta casa de vacaciones ofrece alojamiento con aire acondicionado y balcón. La propiedad ofrece instalaciones de barbacoa y aparcamiento en el lugar.",
+        detailedDescription: "La espaciosa casa de vacaciones con terraza y vistas al mar cuenta con 4 dormitorios, una sala de estar, una TV de pantalla plana, una cocina equipada con lavavajillas y horno, y 4 baños con ducha a ras de suelo. Una entrada privada conduce a los huéspedes a la casa de vacaciones, donde pueden disfrutar de vino o champán y chocolates o galletas.",
         features: "Características Principales",
         featureList: [
           "Entrada privada y ambiente libre de alérgenos",
