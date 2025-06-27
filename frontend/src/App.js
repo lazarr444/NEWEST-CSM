@@ -19,7 +19,8 @@ function App() {
     "https://cf.bstatic.com/xdata/images/hotel/max1024x768/526378837.jpg?k=37e9cd5b09f6357d0cfadd1f07a9131cedf72a0b0cec32eefa3b72714f6c2aeb&o=",
     "https://cf.bstatic.com/xdata/images/hotel/max1024x768/694266562.jpg?k=2272ccbe4e040d7319e21cf953d71c34429a4d4e48b6d6564e7327c53ff71ac5&o=",
     "https://cf.bstatic.com/xdata/images/hotel/max1024x768/652918777.jpg?k=62c4e9d090c67fb1addd2a4b8adb18e6e21f56a95019e7fbd78ced15ef637336&o=",
-    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/683951721.jpg?k=806a475b8fcc51c66132c039b9a668723b530ebdba7518cb58cf352f5b38c187&o="
+    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/683951721.jpg?k=806a475b8fcc51c66132c039b9a668723b530ebdba7518cb58cf352f5b38c187&o=",
+    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/694266490.jpg?k=19df807cc71082de891efbaa30f2d0453c35f2903f4cc10c48b63b4144fd22f3&o="
   ];
 
   // Multi-language content
