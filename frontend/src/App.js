@@ -194,6 +194,7 @@ function App() {
       about: {
         title: "A Casa Blu-ról",
         description: "A Casa Blu Marbella egy nemrég felújított nyaraló Marbellában, ahol a vendégek maximálisan kihasználhatják a kültéri medencét, az ingyenes WiFi-t, a vízi sportlétesítményeket és a kertet. Ez a nyaraló légkondicionált szállást kínál erkéllyel. Az ingatlan grillezési lehetőséget és helyszíni parkolást biztosít.",
+        detailedDescription: "A tágas nyaraló terasszal és tengerre néző kilátással 4 hálószobával, nappali szobával, síkképernyős TV-vel, felszerelt konyhával mosogatógéppel és sütővel, valamint 4 fürdőszobával rendelkezik, zuhanyzóval. Egy privát bejárat vezeti a vendégeket a nyaralóba, ahol bort vagy pezsgőt, csokoládét vagy süteményeket fogyaszthatnak.",
         features: "Főbb Jellemzők",
         featureList: [
           "Privát bejárat és allergénmentes környezet",
