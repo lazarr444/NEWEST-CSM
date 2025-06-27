@@ -7,7 +7,6 @@ function App() {
   const [currentLang, setCurrentLang] = useState('en');
   const [showBackToTop, setShowBackToTop] = useState(false);
 
-
   // Image URLs provided by user
   const heroImageUrl = "https://cf.bstatic.com/xdata/images/hotel/max1024x768/694268187.jpg?k=5c461c7870663482abaad22a25d739414c6d624163c6762904449f3aa2d65efc&o=";
   
@@ -94,20 +93,7 @@ function App() {
       },
       cta: {
         title: "Ready to experience Casa Blu?",
-        subtitle: "Book your luxury getaway today",
-        bookingBtn: "Book Now on Booking.com",
-        bookingFormBtn: "Quick Booking Inquiry"
-      },
-      booking: {
-        title: "Booking Inquiry",
-        checkIn: "Check-in Date",
-        checkOut: "Check-out Date", 
-        guests: "Number of Guests",
-        name: "Full Name",
-        email: "Email Address",
-        phone: "Phone Number",
-        submit: "Send Inquiry",
-        cancel: "Cancel"
+        subtitle: "Book your luxury getaway today"
       },
       footer: {
         copyright: "© 2025 Casa Blu Marbella. All rights reserved.",
@@ -184,20 +170,7 @@ function App() {
       },
       cta: {
         title: "Készen áll a Casa Blu élményére?",
-        subtitle: "Foglalja le luxus kirándulását még ma",
-        bookingBtn: "Foglalás a Booking.com-on",
-        bookingFormBtn: "Gyors Foglalási Érdeklődés"
-      },
-      booking: {
-        title: "Foglalási Érdeklődés",
-        checkIn: "Bejelentkezés Dátuma",
-        checkOut: "Kijelentkezés Dátuma",
-        guests: "Vendégek Száma",
-        name: "Teljes Név",
-        email: "E-mail Cím",
-        phone: "Telefonszám",
-        submit: "Érdeklődés Küldése",
-        cancel: "Mégse"
+        subtitle: "Foglalja le luxus kirándulását még ma"
       },
       footer: {
         copyright: "© 2025 Casa Blu Marbella. Minden jog fenntartva.",
@@ -224,13 +197,6 @@ function App() {
   // Back to top
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  // Handle booking form
-  const handleBookingSubmit = (e) => {
-    e.preventDefault();
-    alert(`Thank you ${bookingForm.name}! Your inquiry has been sent. We'll contact you soon at ${bookingForm.email}.`);
-    setIsModalOpen(false);
   };
 
   const currentContent = content[currentLang];
@@ -539,109 +505,6 @@ function App() {
             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white bg-black bg-opacity-50 px-4 py-2 rounded">
               {activeImageIndex + 1} / {galleryImages.length}
             </div>
-          </div>
-        </div>
-      )}
-
-      {/* Booking Form Modal */}
-      {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center p-4">
-          <div className="bg-white rounded-lg p-8 max-w-md w-full">
-            <h3 className="text-2xl font-bold mb-6 text-gray-800">
-              {currentContent.booking.title}
-            </h3>
-            <form onSubmit={handleBookingSubmit} className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
-                    {currentContent.booking.checkIn}
-                  </label>
-                  <input
-                    type="date"
-                    required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    value={bookingForm.checkIn}
-                    onChange={e => setBookingForm({...bookingForm, checkIn: e.target.value})}
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
-                    {currentContent.booking.checkOut}
-                  </label>
-                  <input
-                    type="date"
-                    required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    value={bookingForm.checkOut}
-                    onChange={e => setBookingForm({...bookingForm, checkOut: e.target.value})}
-                  />
-                </div>
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  {currentContent.booking.guests}
-                </label>
-                <select
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  value={bookingForm.guests}
-                  onChange={e => setBookingForm({...bookingForm, guests: e.target.value})}
-                >
-                  {[1,2,3,4,5,6,7,8].map(num => (
-                    <option key={num} value={num}>{num}</option>
-                  ))}
-                </select>
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  {currentContent.booking.name}
-                </label>
-                <input
-                  type="text"
-                  required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  value={bookingForm.name}
-                  onChange={e => setBookingForm({...bookingForm, name: e.target.value})}
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  {currentContent.booking.email}
-                </label>
-                <input
-                  type="email"
-                  required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  value={bookingForm.email}
-                  onChange={e => setBookingForm({...bookingForm, email: e.target.value})}
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  {currentContent.booking.phone}
-                </label>
-                <input
-                  type="tel"
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  value={bookingForm.phone}
-                  onChange={e => setBookingForm({...bookingForm, phone: e.target.value})}
-                />
-              </div>
-              <div className="flex space-x-4 pt-4">
-                <button
-                  type="submit"
-                  className="flex-1 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors"
-                >
-                  {currentContent.booking.submit}
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setIsModalOpen(false)}
-                  className="flex-1 bg-gray-300 text-gray-700 py-2 px-4 rounded-md hover:bg-gray-400 transition-colors"
-                >
-                  {currentContent.booking.cancel}
-                </button>
-              </div>
-            </form>
           </div>
         </div>
       )}
